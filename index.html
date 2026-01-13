@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NYGHTSHADE NAS Certification Launch</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b0f17;
+      --card: #121826;
+      --muted: #9fb0c4;
+      --text: #e6eef9;
+      --accent: #7c5cff;
+      --accent-2: #26d1ff;
+      --danger: #ff6b6b;
+      --success: #4adf9c;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #1b2335 0%, #0b0f17 55%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 4rem 7vw 3rem;
+      display: grid;
+      gap: 1.5rem;
+      border-bottom: 1px solid rgba(124, 92, 255, 0.2);
+    }
+
+    header h1 {
+      font-size: clamp(2.4rem, 4vw, 3.5rem);
+      letter-spacing: 0.02em;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 1.1rem;
+      max-width: 62ch;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .pill {
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      background: rgba(124, 92, 255, 0.15);
+      color: #c7baff;
+      border: 1px solid rgba(124, 92, 255, 0.3);
+    }
+
+    main {
+      padding: 3rem 7vw 6rem;
+      display: grid;
+      gap: 2.5rem;
+    }
+
+    section {
+      background: var(--card);
+      border-radius: 18px;
+      padding: 2rem;
+      border: 1px solid rgba(63, 85, 125, 0.4);
+      box-shadow: 0 10px 30px rgba(9, 15, 25, 0.4);
+    }
+
+    section h2 {
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+    }
+
+    section p {
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .timeline-item {
+      border-left: 3px solid var(--accent);
+      padding-left: 1rem;
+    }
+
+    .timeline-item h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .timeline-item ul {
+      margin-left: 1.2rem;
+      color: var(--muted);
+    }
+
+    .grid-2 {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .callout {
+      background: rgba(124, 92, 255, 0.12);
+      border: 1px solid rgba(124, 92, 255, 0.35);
+      padding: 1.5rem;
+      border-radius: 16px;
+    }
+
+    .callout strong {
+      color: #d9d1ff;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      background: rgba(38, 209, 255, 0.15);
+      color: #9ee9ff;
+      border: 1px solid rgba(38, 209, 255, 0.4);
+      margin-bottom: 0.8rem;
+    }
+
+    .press-release {
+      background: #0f1420;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 1.5rem;
+      border-radius: 14px;
+      display: grid;
+      gap: 0.8rem;
+      font-size: 0.98rem;
+    }
+
+    .press-release h3 {
+      font-size: 1.2rem;
+    }
+
+    .press-release ul {
+      margin-left: 1.2rem;
+      color: var(--muted);
+    }
+
+    .phase {
+      padding: 1rem 1.2rem;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(124, 92, 255, 0.2);
+    }
+
+    .phase h4 {
+      margin-bottom: 0.4rem;
+    }
+
+    .phase ul {
+      margin-left: 1.2rem;
+      color: var(--muted);
+    }
+
+    .alert {
+      border-left: 4px solid var(--danger);
+      padding-left: 1rem;
+    }
+
+    .alert h4 {
+      color: #ffb2b2;
+    }
+
+    .rules {
+      display: grid;
+      gap: 0.6rem;
+      color: var(--muted);
+    }
+
+    footer {
+      padding: 2rem 7vw 3rem;
+      text-align: center;
+      color: var(--muted);
+      border-top: 1px solid rgba(124, 92, 255, 0.2);
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 3rem 6vw 2rem;
+      }
+
+      main {
+        padding: 2.5rem 6vw 4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="pill-row">
+      <span class="pill">NAS Certification</span>
+      <span class="pill">Partner Onboarding</span>
+      <span class="pill">Trust &amp; Governance</span>
+    </div>
+    <h1>NYGHTSHADE Foundation Launch Playbook</h1>
+    <p>
+      A consolidated launch-ready page covering follow-up milestones, certification communications,
+      onboarding strategy, and crisis response protocols for the NAS certification program.
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Partner Follow-Ups Timeline</h2>
+      <p>Week-one action plan covering public communications, certification intake, and partner onboarding.</p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Day +1</h3>
+          <ul>
+            <li>Publish “Why NAS Exists” explainer</li>
+            <li>Open certification pre-application intake</li>
+            <li>Begin public Q&amp;A responses (strict moderation)</li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <h3>Day +2</h3>
+          <ul>
+            <li>Technical deep-dive blog post</li>
+            <li>Publish compliance FAQ</li>
+            <li>Start community calls scheduling</li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <h3>Day +3</h3>
+          <ul>
+            <li>Announce first pilot certification candidates</li>
+            <li>Release NAS CLI reference tool</li>
+            <li>Share certification timeline</li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <h3>Day +5</h3>
+          <ul>
+            <li>Publish governance transparency page</li>
+            <li>Open Advisory Board nominations</li>
+            <li>Begin partner onboarding conversations</li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <h3>Day +7</h3>
+          <ul>
+            <li>Week-one recap post</li>
+            <li>Metrics review</li>
+            <li>Internal risk assessment</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="badge">🏅 First Certification Announcement</div>
+      <h2>Press Release Template</h2>
+      <div class="press-release">
+        <p><strong>FOR IMMEDIATE RELEASE</strong></p>
+        <h3>NYGHTSHADE Foundation Announces First NAS-Certified Implementations</h3>
+        <p>
+          The NYGHTSHADE Foundation today announced the first implementations to achieve NAS certification,
+          marking an important milestone in establishing industry standards for safe AI-driven automation
+          in creative software.
+        </p>
+        <p>The certified implementations meet the Foundation’s requirements for:</p>
+        <ul>
+          <li>Deterministic behavior</li>
+          <li>Mandatory dry-run previews</li>
+          <li>Full audit logging</li>
+          <li>Tool-authoritative validation</li>
+        </ul>
+        <p>
+          Certification does not imply endorsement of products or vendors. It confirms only that the
+          implementation complies with the published NAS specification.
+        </p>
+        <p><em>“Certification exists to establish trust — not to accelerate automation recklessly,” said a Foundation representative.</em></p>
+        <p>Certified implementations and reports are publicly listed in the Foundation’s registry.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Partner Onboarding Playbook</h2>
+      <p>Enable partners to adopt NAS without fear, friction, or loss of control.</p>
+      <div class="grid-2">
+        <div class="phase">
+          <h4>Phase 1 — Alignment (Weeks 1–2)</h4>
+          <ul>
+            <li>Intro call (non-sales)</li>
+            <li>Explain NAS philosophy (safety-first)</li>
+            <li>Clarify what NAS does not do</li>
+            <li>Identify partner goals and concerns</li>
+          </ul>
+          <p><strong>Deliverables:</strong></p>
+          <ul>
+            <li>NAS overview deck</li>
+            <li>Compliance checklist</li>
+            <li>Non-binding MoU</li>
+          </ul>
+        </div>
+        <div class="phase">
+          <h4>Phase 2 — Technical Fit (Weeks 3–6)</h4>
+          <ul>
+            <li>Adapter design workshop</li>
+            <li>Review tool APIs and safety boundaries</li>
+            <li>Define supported NAS compliance level</li>
+            <li>Draft adapter roadmap</li>
+          </ul>
+          <p><strong>Deliverables:</strong></p>
+          <ul>
+            <li>Adapter architecture doc</li>
+            <li>Compliance target (Inspect / Write / Enterprise)</li>
+            <li>Certification plan</li>
+          </ul>
+        </div>
+        <div class="phase">
+          <h4>Phase 3 — Pilot (Weeks 7–10)</h4>
+          <ul>
+            <li>Build reference adapter</li>
+            <li>Run certification test suite</li>
+            <li>Validate dry-run accuracy</li>
+            <li>Audit logs and rollback behavior</li>
+          </ul>
+          <p><strong>Deliverables:</strong></p>
+          <ul>
+            <li>Pilot certification report</li>
+            <li>Registry pre-entry</li>
+            <li>Feedback loop into spec (if needed)</li>
+          </ul>
+        </div>
+        <div class="phase">
+          <h4>Phase 4 — Certification &amp; Launch</h4>
+          <ul>
+            <li>Certification issued</li>
+            <li>Public registry entry</li>
+            <li>Optional joint announcement</li>
+            <li>Ongoing compliance monitoring</li>
+          </ul>
+        </div>
+      </div>
+      <div class="callout" style="margin-top: 1.5rem;">
+        <strong>Partner Assurances (Critical)</strong>
+        <ul>
+          <li>NAS does not bypass tool safeguards</li>
+          <li>NAS does not remove human approval</li>
+          <li>NAS does not require cloud connectivity</li>
+          <li>Partners retain full IP and control</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="badge">🚨 Crisis / Misuse Response Plan</div>
+      <h2>Trust Preservation Framework</h2>
+      <p class="alert"><strong>Guiding Principle:</strong> Trust is more valuable than adoption speed.</p>
+      <div class="grid-2">
+        <div class="phase alert">
+          <h4>1️⃣ Misuse of NAS by a Third Party</h4>
+          <p>Examples: Skipping dry-run, misrepresenting certification, unsafe automation claims.</p>
+          <p><strong>Response</strong></p>
+          <ul>
+            <li>Immediate public clarification</li>
+            <li>Registry update or revocation</li>
+            <li>Written incident report</li>
+            <li>Certification Council review</li>
+          </ul>
+        </div>
+        <div class="phase alert">
+          <h4>2️⃣ Vulnerability or Spec Gap</h4>
+          <p>Examples: Unexpected side effects, ambiguous spec behavior.</p>
+          <p><strong>Response</strong></p>
+          <ul>
+            <li>Temporary advisory issued</li>
+            <li>Spec clarification RFC</li>
+            <li>Backward-compatible fix</li>
+            <li>Public disclosure timeline</li>
+          </ul>
+        </div>
+        <div class="phase alert">
+          <h4>3️⃣ Partner Misconduct</h4>
+          <p>Examples: False claims of certification, silent behavior changes.</p>
+          <p><strong>Response</strong></p>
+          <ul>
+            <li>Immediate suspension</li>
+            <li>Public notice in registry</li>
+            <li>Partner remediation path</li>
+            <li>Revocation if unresolved</li>
+          </ul>
+        </div>
+        <div class="phase alert">
+          <h4>4️⃣ External Incident (AI Panic, Media)</h4>
+          <p>Examples: “AI broke game studio pipeline”, sensational reporting.</p>
+          <p><strong>Response</strong></p>
+          <ul>
+            <li>Calm factual statement</li>
+            <li>Emphasize NAS safeguards</li>
+            <li>Highlight human oversight</li>
+            <li>No defensive language</li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid-2" style="margin-top: 1.5rem;">
+        <div class="phase">
+          <h4>Crisis Communications Rules</h4>
+          <div class="rules">
+            <span>No speculation</span>
+            <span>No blame-shifting</span>
+            <span>No minimization</span>
+            <span>No marketing language</span>
+            <span>Full transparency, measured tone</span>
+          </div>
+        </div>
+        <div class="phase">
+          <h4>Emergency Authority</h4>
+          <div class="rules">
+            <span>Suspend certifications</span>
+            <span>Issue advisories</span>
+            <span>Require re-validation</span>
+            <span>Trigger governance review</span>
+          </div>
+        </div>
+        <div class="phase">
+          <h4>Post-Incident Review</h4>
+          <div class="rules">
+            <span>Publish postmortem</span>
+            <span>Update test suite</span>
+            <span>Improve spec language</span>
+            <span>Review governance process</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Final Reality Check</h2>
+      <p>At this point, NYGHTSHADE has:</p>
+      <div class="grid-2">
+        <div class="callout">
+          <ul>
+            <li>A live launch plan</li>
+            <li>A trust-first certification rollout</li>
+            <li>A repeatable partner onboarding system</li>
+            <li>A real crisis response framework</li>
+          </ul>
+        </div>
+        <div class="callout">
+          <p>
+            This is the difference between:
+            <strong>“a promising standard”</strong> and
+            <strong>“a standard that survives reality.”</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    NYGHTSHADE Foundation · NAS Certification Launch Kit
+  </footer>
+</body>
+</html>
